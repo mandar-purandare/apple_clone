@@ -1,0 +1,38 @@
+.homebody-container{
+    height: 2000px;
+}
+
+.instant-savings{
+    font-weight: 400;
+    color: white;
+    background-color: rgb(29,29,31);
+    height: 4%;
+    padding-top: 3%;
+}
+
+.instant-savings > p{
+    padding: 1%;
+}
+
+.large-img-container{
+    height: 35em;
+    scale: 1 1;
+    margin-bottom: 10px;
+}
+
+.large-img-container img{
+    height: 100%;
+    width: 100%;
+}
+
+/* .small-img-container{
+    margin-top: 35em;
+    height: 1500px;
+    background-color: blue;
+}
+
+.small-img-container > div{
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+} */
