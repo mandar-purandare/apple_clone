@@ -1,12 +1,12 @@
 .homebody-container{
-    height: 2000px;
+    height: 4050px;
 }
 
 .instant-savings{
     font-weight: 400;
     color: white;
     background-color: rgb(29,29,31);
-    height: 4%;
+    height: 1%;
     padding-top: 3%;
 }
 
@@ -15,9 +15,13 @@
 }
 
 .large-img-container{
-    height: 35em;
+    /* height: 35em; */
     scale: 1 1;
     margin-bottom: 10px;
+}
+
+.large-img-container > div{
+    position: relative;
 }
 
 .large-img-container img{
@@ -25,14 +29,25 @@
     width: 100%;
 }
 
-/* .small-img-container{
-    margin-top: 35em;
-    height: 1500px;
-    background-color: blue;
+.small-img-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .small-img-container > div{
     border: 1px solid black;
-    height: 100px;
-    width: 100px;
-} */
+    height: 35em;
+    width: 47%;
+    padding: 1%;
+    position: relative;
+} 
+
+.small-img-container img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: 50% 25%; 
+}
+

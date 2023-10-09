@@ -1,0 +1,44 @@
+.image-text-container{
+    position: absolute;
+    /* left: 35%; */
+    top: 50px;
+    color: blue;
+}
+
+.large{ left: 35%;}
+.small{left: 27%;}
+
+.large h2{
+    font-size: 3.5em;
+    font-weight: 500;
+}
+
+.large h3{
+    font-size: 1.7em;
+    font-weight: 400;
+}
+
+.small h2{
+    font-size: 2.5em;
+    font-weight: 500;
+    
+}
+
+.small h3{
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.small img{
+    scale: 0.60 .60;
+}
+
+h4{
+    font-size: 1.25em;
+    font-weight: 400;
+    margin-top: 4%;
+}
+
+span{
+    padding: 0px 10px;
+}
