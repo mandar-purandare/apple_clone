@@ -37,7 +37,7 @@
 }
 
 .small-img-container > div{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     height: 35em;
     width: 47%;
     padding: 1%;
@@ -50,4 +50,17 @@
     object-fit: cover;
     object-position: 50% 25%; 
 }
+
+/* .movie-slider > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.go-left, .go-right{
+    height: 4em;
+    width: 4em;
+    background-color: black;
+    opacity: 0.5;
+} */
 

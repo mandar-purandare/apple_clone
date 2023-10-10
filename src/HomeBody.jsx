@@ -48,7 +48,8 @@ function HomeBody() {
         {smallImageArray.map((img,i) => <div><img src={img}/><ImageText textObj={smallImageTextArray[i]}/></div>)}
       </div>
       <div className='movie-slider'>
-        <img src={silo} style={{height:450, width:800}}/><br/>
+        <div><div className='go-left'></div><img src={silo} style={{height:450, width:800}}/><div className='go-right'></div></div>
+        <br/>
         <img src={slider_dots}/>
       </div>
     </div>
