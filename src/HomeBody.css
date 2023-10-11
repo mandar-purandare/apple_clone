@@ -1,5 +1,5 @@
 .homebody-container{
-    height: 4050px;
+    height: 4155px;
 }
 
 .instant-savings{
@@ -51,16 +51,14 @@
     object-position: 50% 25%; 
 }
 
-/* .movie-slider > div{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+.pre-footer{
+    text-align: start;
+    background-color: rgb(245,245,247);
+    padding-bottom:17px ;
 
-.go-left, .go-right{
-    height: 4em;
-    width: 4em;
-    background-color: black;
-    opacity: 0.5;
-} */
+    /* font-size: 0.8em;
+    width: 80%;
+    margin: auto;
+    padding-top: 1%; */
+}
 

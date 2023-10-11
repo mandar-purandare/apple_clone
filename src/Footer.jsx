@@ -7,10 +7,10 @@ function Footer() {
   const listItems = [['Store','Mac','iPad','iPhone','Watch','AirPods','TV & Home','AirTag','Accessories','Gift Cards'],  ['Wallet'],['Manage Your Apple ID','Apple Store Account','iCloud.com'],['Apple One','Apple TV+','Apple Music','Apple Arcade','Apple Podcasts','Apple Books','App Store'],['Find a Store','Genius Bar','Today at Apple','Apple Camp','Apple Trade In','Ways to Buy','Recycling Programme','Order Status','Shopping Help'],['Apple and Business','Shop for Business'],['Apple and Education','Shop for Education','Shop for University'],['Apple in Healthcare','Health on Apple Watch'],['Accessibility','Education','Environment','Privacy','Supplier Responsiblity'],['Newsroom','Apple Leadership','Career Opportunities','Investors','Ethics & Complaince','Events','Contact Apple']]
   return (
     <div className='footer-container'>
-      <p className='footer-text'>
+      {/* <p className='footer-text'>
           *Instant savings, otherwise referred to as instant cashback on the Apple Store Online, is available with the purchase of an eligible product for qualifying HDFC Bank Credit Cards and EasyEMI Credit Cards only. Minimum transaction value of ₹10001.00 applies. <span className='bold-and-underline'>Click here</span> to see instant savings amounts and eligible devices. Instant savings is available for up to two orders per rolling 90-day period with an eligible card. Card eligibility is subject to terms and conditions between you and your card-issuing bank. Total transaction value is calculated after any trade-in credit or eligible discount applied. Any subsequent order adjustment(s) or cancellation(s) may result in instant savings being recalculated, and any refund may be adjusted to account for instant savings clawback; this may result in no refund being made to you. Offer may be revised or withdrawn at any time without any prior notice. <span className='bold-and-underline'>Terms and conditions</span> apply. Offer cannot be combined with Apple Store for Education or Corporate Employee Purchase Plan pricing. Multiple separate orders cannot be combined for instant savings.
       </p><br/>
-      <p className='footer-text'>A subscription is required for Apple TV+.</p>
+      <p className='footer-text'>A subscription is required for Apple TV+.</p> */}
       <hr className='footer-hr-1'/>
       <div className='footer-lists-container'>
         {
