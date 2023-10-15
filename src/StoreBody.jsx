@@ -21,6 +21,8 @@ import flexible_ways_to_pay from './images/store/flexible_ways_to_pay.png';
 import exchange_your_smartphone from './images/store/exchange_your_smartphone.png';
 import our_bussiness_your_team from './images/store/our_bussiness_your_team.png';
 import trade_in_your_apple from './images/store/trade_in_your_apple.png';
+import Header from "./Header";
+import Footer from "./Footer";
 
 function StoreBody(){
     const storeAssistanceArray = [{icon: store_chat_specialist, line_1:'Need shopping help?', line_2:'Ask a specialist'}, 
@@ -50,6 +52,7 @@ function StoreBody(){
 
     return(
         <div className="storebody-container">
+            <Header/>
             <div className="nav-and-savings">
                 <div className="nav-background"></div>
                 <div className="savings-div">
@@ -130,6 +133,7 @@ function StoreBody(){
                 We use your location to show you delivery options faster. We found your location using your IP address or because you entered it during a previous visit to Apple.
                 </p>
             </div>
+            <Footer/>
         </div>
     )
 }

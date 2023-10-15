@@ -1,12 +1,17 @@
+*{
+    margin: 0;
+}
 .homebody-container{
-    height: 4155px;
+    /* height: 4155px; */
+    height: 2500px;
 }
 
 .instant-savings{
     font-weight: 400;
     color: white;
     background-color: rgb(29,29,31);
-    height: 1%;
+    /* height: 1%; */
+    height: 2%;
     padding-top: 3%;
 }
 

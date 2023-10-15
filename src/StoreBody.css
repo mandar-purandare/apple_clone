@@ -3,7 +3,8 @@
 }
 
 .storebody-container{
-    height: 3120px;
+    /* height: 3120px; */
+    height: 2500px;
     background-color: rgb(245,245,247);
 }
 
@@ -127,13 +128,14 @@
     margin-left: 15%;
     font-size: 2em;
     font-weight: 500;
+    margin-bottom: 2%;
 }
 
 .quick-links-options-div{
     display: flex;
     justify-content: space-around;
     margin-left: 10%;
-    margin-top: 2%;
+    /* margin-top: 2%; */
 }
 
 .quick-links-options-div div{
@@ -143,7 +145,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0.5% 3.5%;
+    /* padding: 0.5% 3.5%; */
+    padding: 0% 3.5%;
 }
 
 .text-blue{

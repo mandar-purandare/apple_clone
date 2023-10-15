@@ -16,6 +16,8 @@ import trade_in_logo from './images/logo_tradein__d1fpktgipvki_large.png';
 import silo from './images/SILO.jpg';
 import slider_dots from './images/slider_dots.png';
 import ImageText from './ImageText';
+import Header from './Header';
+import Footer from './Footer';
 
 function HomeBody() {
   const largeImageTextArray = [
@@ -38,6 +40,7 @@ function HomeBody() {
   const smallImageArray = [ipad_pro, watch_ultra_2, macbook_air_15, airpod_pro, trade_in, homepod_mini]
   return (
     <div className='homebody-container'>
+      <Header/>
       <div className='instant-savings'>
         <p>Get up to ₹8000.00 instant savings on selected products with eligible HDFC Bank cards.* Shop now <i class="fa-solid fa-chevron-right"></i></p>
       </div>
@@ -58,6 +61,7 @@ function HomeBody() {
         </p><br/>
         <p className='footer-text'>A subscription is required for Apple TV+.</p>
       </div>
+      <Footer/>
     </div>
   )
 }
