@@ -1,0 +1,95 @@
+.sign-in-container h2{
+    padding-top: 7%;
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: start;
+    margin-left: 15%;
+}
+
+.sign-in-container h3{
+    padding-top: 5%;
+    font-size: 1.5em;
+    color: rgb(73,73,73);
+    font-weight: 500;
+}
+
+.sign-in-email-or-phone{
+    height: 3em;
+    display: block;
+    margin: auto;
+    margin-top: 3%;
+    margin-bottom: 7%;
+    width: 30%;
+    border: 1px solid black;
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.sign-in-email-or-phone input{
+    border: none;
+    outline: none;
+    margin-left: 4%;
+    font-size: 1em;
+}
+
+.sign-in-email-or-phone i{
+    margin-right: 2%;
+    margin-top: 6%;
+    color: rgb(73,73,73);
+}
+
+.remember-me-div{
+    padding-bottom: 2%;
+}
+
+.sign-in-forgot-password{
+    padding-bottom: 1%;
+}
+
+.sign-in-create-apple-id{
+    padding-bottom: 9%;
+}
+
+.sign-in-pre-footer{
+    height: 5%;
+    text-align: start;
+    padding-left: 14%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 1.20em;
+    border-top: 1px solid gray;
+}
+
+.sign-in-footer{
+    background-color: rgb(245,245,247);
+}
+
+.sign-in-container .footer-text{
+    text-align: start;
+}
+
+.sign-in-encryption-and-security{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    font-size: 0.8em;
+    text-align: start;
+    margin-left: 10%;
+}
+
+.sign-in-footer-hr{
+    width: 80%;
+    margin: auto;
+}
+
+.sign-in-container .footer-bottom-div{
+    padding-bottom: 3%;
+}
+
+.blue-link-hover{
+    color: blue;
+}
+
+.blue-link-hover:hover{
+    text-decoration: underline;
+}

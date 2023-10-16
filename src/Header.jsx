@@ -18,7 +18,8 @@ function Header() {
           router('/');
         }
         if(items.props.class === 'fa-solid fa-bag-shopping fa-xl'){
-          router('/cart');
+          setOpacity(opacity => opacity ='transparent');
+          router('/signin');
         }
       }
       if(typeof items === 'string'){
