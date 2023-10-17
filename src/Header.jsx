@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './Header.css';
-import { useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 
 function Header() {
     const navItems = [<i class="fa-brands fa-apple fa-xl"></i>,'Store','Mac','iPad','iPhone','Watch','AirPods','TV & Home','Entertainment','Accessories',
@@ -9,6 +9,8 @@ function Header() {
     const router = useNavigate();
 
     const [opacity, setOpacity] = useState('');
+
+    const location = useLocation();
 
     function goTo(items){
 
@@ -30,6 +32,11 @@ function Header() {
         router('/'+ path);
       }
     }
+
+    // if(location.pathname === '/iphone15pro'){
+    //   setOpacity(opacity => opacity ='header-absolute');
+    // }
+    
 
   return (
     <div className='header-container'>

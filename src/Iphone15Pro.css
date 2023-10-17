@@ -1,0 +1,147 @@
+.iphone-15-pro-container {
+    height: 5000px;
+}
+
+.iphone-15-pro-container header{
+    position: relative;
+}
+
+.iphone-15-pro-container .instant-savings{
+    height: 3em;
+    background-color: rgb(28,39,57);
+}
+
+.big-image{
+    height: 35em;
+    width: 100%;
+    background-color: black;
+    position: relative;
+}
+
+.big-image h3{
+    padding-top: 4%;
+    color: rgb(190,184,174);
+    font-size: 2em;
+    font-weight: 500;
+}
+
+.big-image img{
+    /* margin-top: 10%; */
+    height: 65%;
+    width: 85%;
+}
+
+.big-image button{
+    position: absolute;
+    right: 47%;
+    top: 80%;
+    height: 7%;
+    width: 5.5%;
+    border-radius: 2em;
+    background-color: rgb(0,113,227);
+    color: white;
+    border: none;
+    font-size: 1.20em;
+}
+
+.big-image h4{
+    padding-top: 0%;
+    padding-bottom: 4%;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 500;
+    background-color: black;
+}
+
+.i15pro-sec-2{
+    height: 70em;
+    background-color: rgb(16,16,16);
+    margin-top: 3%;
+}
+
+.i15pro-sec-2-text-div{
+    height: 30%;
+    border: 1px solid white;
+    display: flex;
+    padding-bottom: 1%;
+}
+
+.i15pro-sec-2-text-div > div{
+    height: 50%;
+    color: white;
+    border: 1px solid white;
+    width: 50%;
+    margin-top: 9%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+}
+
+.i15pro-sec-2-text-div > div:nth-child(1){
+    font-size: 3em;
+    color: rgb(134,134,139);
+    font-weight: 600;
+    margin-left: 5%;
+}
+
+.i15pro-sec-2-text-div > div:nth-child(2){
+    display: flex;
+    justify-content: flex-end;
+}
+
+.i15pro-sec-2-text-div > div:nth-child(2) h4{
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.i15pro-sec-2-img-card{
+    height: 60%;
+    width: 90%;
+    margin: auto;
+    border: 1px solid white;
+    border-radius: 1em;
+    background-color: black;
+}
+
+.i15pro-sec-2-img-text{
+    color: white;
+    font-size: 1.5em;
+    text-align: start;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+
+.i15pro-sec-2-img-div{
+    border: 1px solid white;
+    width: 25%;
+    height: 40%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.i15pro-sec-2-img-div img{
+    height: 100%;
+    width: 100%;
+}
+
+.i15pro-sec-3{
+    height: 70em;
+    background-color: black;
+}
+
+.i15pro-sec-3 h2{
+    color: rgb(134,134,139);
+    padding-top: 15%;
+    text-align: left;
+    margin-left: 5%;
+    font-size: 3.5em;
+    font-weight: 500;
+}
+
+.i15pro-sec-3 > div:nth-child(2){
+    margin-top: 5%;
+}
+
+.i15pro-sec-3 > div:nth-child(3) img{
+    margin-top: 5%;
+}
