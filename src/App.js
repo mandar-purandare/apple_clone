@@ -7,6 +7,7 @@ import StoreBody from './StoreBody';
 import SignIn from './SignIn';
 import Register from './Register';
 import Iphone15Pro from './Iphone15Pro';
+import Cart from './Cart';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route exact path='/signin' element={<SignIn/>}/>
           <Route exact path='/register' element={<Register/>}/>
           <Route exact path='/iphone15pro' element={<Iphone15Pro/>}/>
+          <Route exact path='/cart' element={<Cart/>}/>
         </Routes>
       {/* <Footer/> */}
     </div>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './Header.css';
 import { useLocation, useNavigate } from 'react-router-dom';
 
@@ -36,6 +36,12 @@ function Header() {
     // if(location.pathname === '/iphone15pro'){
     //   setOpacity(opacity => opacity ='header-absolute');
     // }
+
+    useEffect(() => {
+      if(location.pathname === '/cart'){
+        setOpacity(opacity => opacity = 'transparent');
+      }
+    },[])
     
 
   return (

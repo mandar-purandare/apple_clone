@@ -1,0 +1,102 @@
+.cart-container{
+    height: 3000px;
+}
+
+.cart-savings-div{
+    background-color: rgb(245,245,247);
+}
+
+.cart-total h2{
+    margin-top: 5%;
+    margin-bottom: 2%;
+    font-size: 2.5em;
+    font-weight: 500;
+}
+
+.cart-total button{
+    width: 20%;
+    padding-top: 0.7%;
+    padding-bottom: 0.7%;
+    border-radius: 0.5em;
+    border: none;
+    background-color: rgb(0,113,227);
+    font-size: 1em;
+    color: white;
+    margin-bottom: 5%;
+}
+
+.cart-total hr{
+    width: 70%;
+    margin: auto;
+    margin-bottom: 2%;
+}
+
+.cart-item-template{
+    height: 32em;
+    width: 70%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+.cart-item-template-row1{
+    height: 40%;
+    display: flex;
+}
+
+.cart-item-img{
+    height: 10em;
+    width: 10em;
+    padding: 1.5em 0em 1em 3em;
+}
+
+.cart-item-img img{
+    height: 100%;
+    width: 100%;
+}
+
+.cart-item-name-installment{
+    padding-left: 0em;
+    padding-right: 1em;
+}
+
+.cart-item-name-installment h3{
+    padding: 0em 0em 2em 0em;
+    text-align: left;
+    margin-left: 2.5em;
+    font-size: 1.5em;
+    font-weight: 500;
+}
+
+.cart-item-name-installment p{
+    text-align: left;
+    margin-left: 3.5em;
+}
+
+.quantity-select-and-remove > div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    float: right;
+    font-size: 1.5em;
+    font-weight: 400;
+}
+
+.quantity-select-and-remove p:nth-child(2){
+    margin-top: 4.5em;
+    color: rgb(212,98,0);
+}
+
+.quantity-select-and-remove p:nth-child(4){
+    margin-top: 2em;
+}
+
+.quantity-select-and-remove p{
+    text-align: right;
+    text-wrap: nowrap;
+    margin-right: 0.5em;
+}
+
+.cart-item-template hr{
+    width: 70%;
+    float: right;
+}
