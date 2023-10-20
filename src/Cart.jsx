@@ -35,44 +35,6 @@ function Cart() {
             <hr className='divider-hr'/>
         </section>
         <section className='cart-items'>
-            {/* <div className='cart-item-template '>
-                <div className='cart-item-template-row1'>
-                    <div className='cart-item-img'>
-                        <img src={i15pro}/>
-                    </div>
-                    <div className='cart-item-name-installment'>
-                        <h3>iPhone 15 Pro 128GB Blue Titanium</h3>
-                        <p>Pay 15% pa for 6 months:^</p>
-                    </div>
-                    <div className='quantity-select-and-remove'>
-                        <div>
-                            <div>1 <i class="fa-solid fa-chevron-down fa-xs"></i></div>
-                            <h3>₹134900.00</h3>
-                        </div>
-                        <p>Get up to ₹11457.00 savings with eligible card(s)^</p>
-                        <p>₹21483.00/mo.^</p>
-                        <p className='blue-link-hover'>Remove</p>
-                    </div>
-                </div>
-                <hr/>
-                <div className='cart-item-template-row2'>
-                    <div>
-                        <div><i class="fa-brands fa-apple"></i><h3>Add AppleCare+ for iPhone 15 Pro for ₹20900.00</h3></div>
-                        <span className='blue-link-hover'>Add</span>
-                    </div>
-                    <ul>
-                        <li>Unlimited repairs for accidental damage protection</li>
-                        <li>Apple-certified repairs using genuine Apple parts</li>
-                        <li>Priority access to Apple experts</li>
-                    </ul>
-                    <p className='blue-link-hover'>Learn more <i class="fa-solid fa-chevron-right fa-xs"></i></p>
-                </div>
-                <hr/>
-                <div className='cart-item-template-row3'>
-                    <div><h3>Find out how soon you can get this item.</h3><span className='blue-link-hover'>Enter pin code <i class="fa-solid fa-chevron-down fa-xs"></i></span></div>
-                    <div><span><img src={box}/> In stock and ready to ship.</span><span><img src={apple_bag}/> Pick up at an Apple Store near you.</span></div>
-                </div>
-            </div> */}
             {
                 cartItemsArray.map(obj => (
                     <div className='cart-item-template '>
