@@ -8,6 +8,7 @@ import SignIn from './SignIn';
 import Register from './Register';
 import Iphone15Pro from './Iphone15Pro';
 import Cart from './Cart';
+import ShopIphone from './ShopIphone';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
           <Route exact path='/register' element={<Register/>}/>
           <Route exact path='/iphone15pro' element={<Iphone15Pro/>}/>
           <Route exact path='/cart' element={<Cart/>}/>
+          <Route exact path='/shopiphone' element={<ShopIphone/>}/>
         </Routes>
       {/* <Footer/> */}
     </div>

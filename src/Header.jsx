@@ -38,7 +38,7 @@ function Header() {
     // }
 
     useEffect(() => {
-      if(location.pathname === '/cart'){
+      if(location.pathname === '/cart' || location.pathname === '/shopiphone'){
         setOpacity(opacity => opacity = 'transparent');
       }
     },[])

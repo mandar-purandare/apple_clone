@@ -1,0 +1,18 @@
+.shop-iphone-container{
+    height: 2000px;
+    background-color: rgb(245,245,247);
+}
+
+.header-background{
+    height: 2%;
+}
+
+.shop-iphone-instant-savings{
+    background-color: rgb(28,39,57);
+    padding: 1% 30%;
+    /* padding-top: 4%; */
+}
+
+.shop-iphone-title{
+    justify-content: flex-start;
+}
