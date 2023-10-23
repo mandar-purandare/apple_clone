@@ -79,3 +79,44 @@
     height: 90%;
     width: 30%;
 }
+
+.shop-iphone-big-slider{
+    margin-top: 0px;
+}
+
+.shop-iphone-big-slider img{
+    height: 60%;
+    padding-top: 30%;
+}
+
+.shop-iphone-big-slider img:hover{
+    scale: 1;
+}
+
+.shop-iphone-big-slider .big-slider-card{
+    background-color: white;
+    position: relative;
+}
+
+.shop-iphone-big-slider .big-slider-card:hover{
+    scale: 1.02;
+    /* box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5); */
+    /* transition: box-shadow 0.5s; */
+    transition: scale 0.5s;
+}
+
+.shop-iphone-big-slider .big-slider-card-text > h4{
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+.shop-iphone-big-slider .big-slider-card-text > h2{
+    font-weight: 700;
+}
+
+.shop-iphone-big-slider h3{
+    font-size: 0.9em;
+    position: absolute;
+    top: 420px;
+    width: 100%;
+}

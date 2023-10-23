@@ -1,13 +1,13 @@
 import React from 'react';
 import './BigSlider.css';
 
-function BigSlider({cardArray, heading1, heading2, customCard}) {
+function BigSlider({cardArray, heading1, heading2, customCard, modalState}) {
   return (
     <div className={`big-slider-container  ${customCard}`}>
         <h2 className='big-slider-heading'><span>{heading1}</span><span>{heading2}</span></h2>
         <div className='big-slider-card-container'>
             {cardArray.map(obj => (
-                <div className={`big-slider-card `}>
+                <div className={`big-slider-card `} onClick={() => modalState.setProductModal(modalState.productModal = obj.route)}>
                     <img src={obj.image}/>
                     <div className='big-slider-card-text' style={{color:obj.color}}>
                         <h4>{obj.prod}</h4>

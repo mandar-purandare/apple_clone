@@ -1,6 +1,7 @@
 .shop-iphone-container{
-    height: 2000px;
+    height: 2500px;
     background-color: rgb(245,245,247);
+    position: relative;
 }
 
 .header-background{
@@ -15,4 +16,47 @@
 
 .shop-iphone-title{
     justify-content: flex-start;
+}
+
+.shop-iphone-shop-nav{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 12%;
+}
+
+.shop-iphone-shop-nav > div{
+    margin: 0% 1%;
+}
+
+.shop-iphone-store-heading {
+    font-size: 2em;
+    display: block;
+    padding-bottom: 10px;
+}
+
+.hidden-modal{
+    display: none;
+}
+
+.close-modal-button{
+    width: 20%;
+    margin-top: 5%;
+}
+
+.close-modal-button i{
+    color: white;
+}
+
+.iphone_15_pro{
+    display: block;
+    height: 1000px;
+    width: 70%;
+    border: 1px solid black;
+    position: absolute;
+    left: 15%;
+    z-index: 2;
+}
+
+.product-modal-template{
+    height: 500px;
 }
