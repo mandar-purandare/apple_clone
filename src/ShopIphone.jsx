@@ -7,6 +7,14 @@ import store_location_icon from './images/store/store-location-icon.png';
 import iphone_15 from './images/shop_iphone/iphone-card-40-iphone15hero-202309.jpeg'
 import iphone_15_pro from './images/shop_iphone/iphone-card-40-iphone15prohero-202309.jpeg'
 import iphone_14 from './images/shop_iphone/iphone-card-40-iphone14-202209.jpeg'
+import iphone_modal_image from './images/shop_iphone/iphone-modal-image.png'
+import iphone_modal_footer from './images/shop_iphone/iphone-modal-footer.png'
+import feature_li_opt_1 from './images/shop_iphone/li-screen-size.png'
+import feature_li_opt_2 from './images/shop_iphone/li-action-button.png'
+import feature_li_opt_3 from './images/shop_iphone/li-camera.png'
+import feature_li_opt_4 from './images/shop_iphone/li-a17-pro-chip.png'
+import feature_li_opt_5 from './images/shop_iphone/li-c-type.png'
+
 import Footer from './Footer';
 
 function ShopIphone() {
@@ -28,15 +36,55 @@ function ShopIphone() {
 
     return (
         <div className='shop-iphone-container'>
+
+            {/* ------------modal start----------------- */}
+
             <div className={productModal}>
                 <div className='close-modal-button' onClick={closeModal}>
                     <i class="fa-solid fa-circle-xmark fa-2xl"></i>
                 </div>
                 <div className='product-modal-template'>
-                    <h1>iPhone 15 pro</h1>
-                </div>
-                
+                    <div className='product-modal-body'>
+                        <div className='prduct-modal-left'>
+                            <div className='product-modal-nav'>
+                                <div>iPhone 15 Pro</div>
+                                <div>iPhone 15 Pro Max</div>
+                            </div>
+                            <div className='product-modal-img'>
+                                <img src={iphone_modal_image}/>
+                            </div>
+                        </div>
+                        <div className='prduct-modal-right'>
+                            <div className='product-modal-title'>
+                                <div>
+                                    <span>New</span>
+                                    <h1>iPhone 15 Pro</h1>
+                                    <p>From ₹21483.00/mo.Per Month with instant savings§§ and No Cost EMI§ or ₹134900.00‡</p>
+                                </div>
+                                <div>
+                                    <button>Buy</button>
+                                </div>
+                            </div>
+                            <div className='product-modal-features'>
+                                <ul>
+                                    <li className='feature-li-opt-1'><img src={feature_li_opt_1}/><p>15.5 cm (6.1-inch) Super Retina XDR display¹ featuring ProMotion, Always-On and Dynamic Island</p></li>
+                                    <li className='feature-li-opt-2'><img src={feature_li_opt_2}/><p>Strong and light titanium design with Action button — a fast track to your favourite feature</p></li>
+                                    <li className='feature-li-opt-3'><img src={feature_li_opt_3}/><p>48MP Main camera for super-high-resolution photos and 3x Telephoto camera</p></li>
+                                    <li className='feature-li-opt-4'><img src={feature_li_opt_4}/><p>A17 Pro chip delivers a massive leap in graphics performance, transforming mobile gaming</p></li>
+                                    <li className='feature-li-opt-5'><img src={feature_li_opt_5}/><p>USB-C connector with USB 3 for up to 20x faster transfer speeds footnote ² and new pro workflows</p></li>
+                                </ul>
+                            </div>
+                            <p className='product-modal-explore'>Explore iPhone 15 Pro further <i class="fa-solid fa-chevron-right fa-xs"></i></p>
+                        </div>
+                    </div>
+                    <div className='product-modal-footer'>
+                        <img src={iphone_modal_footer}/>
+                    </div>
+                </div>   
             </div>
+
+            {/* ---------------modal end--------------------- */}
+
             <Header/>
             <div className='header-background'></div>
             <div className='instant-savings shop-iphone-instant-savings'>
