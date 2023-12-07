@@ -30,3 +30,13 @@ nav > div{
 .header-absolute{
     position: absolute;
 }
+
+.user-name{
+    color: white;
+}
+
+.user-name > div{
+    width: 150%;
+    display: flex;
+    justify-content: space-around;
+}

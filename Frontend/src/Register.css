@@ -75,6 +75,13 @@
     padding-left: 1%;
 }
 
+.register-section-big-div input{
+    height: 95%;
+    width: 100%;
+    border: none;
+    outline: none;
+}
+
 .register-hr-2{
     margin: auto;
     margin-top: 2%;

@@ -21,9 +21,9 @@ import Footer from './Footer';
 
 function HomeBody() {
   const largeImageTextArray = [
-    {heading:'iPhone 15 Pro', description:'Titanium. So strong. So light. So Pro', color: 'white', class:'large'},
-    {heading:'iPhone 15', description:'New camera. New design. Newphoria', color: 'black', class:'large'},
-    {heading: <img src={watch_series_9_logo} style={{height:90, width:180}}/>, description:'Smarter. Brighter. Mightier', color: 'white', class:'large'}
+    {heading:'iPhone 15 Pro', description:'Titanium. So strong. So light. So Pro', color: 'white', class:'large', route:'iphone15pro'},
+    {heading:'iPhone 15', description:'New camera. New design. Newphoria', color: 'black', class:'large', route:'iphone15'},
+    {heading: <img src={watch_series_9_logo} style={{height:90, width:180}}/>, description:'Smarter. Brighter. Mightier', color: 'white', class:'large', route:'watchseries9'}
   ]
 
   const chip_logo_description = <img src={m2_chip_logo} style={{height:35, width:35}}/>;

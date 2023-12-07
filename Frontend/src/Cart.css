@@ -239,7 +239,7 @@
     height: 40em;
 }
 
-.cart-you-may-like-template p, h3{
+.cart-you-may-like-template p, .cart-you-may-like-template h3{
     text-align: left;
 }
 

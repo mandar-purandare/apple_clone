@@ -1,23 +1,60 @@
-import React from 'react'
+import React, { useContext, useState } from 'react'
 import Header from './Header'
 import './SignIn.css'
+import { useNavigate } from 'react-router-dom'
+import toast, { Toaster } from 'react-hot-toast';
+import api from './Config/Axios.config';
+import { AuthContext } from './Context/Auth.context';
 
 function SignIn() {
+
+  const {Login} = useContext(AuthContext);
+
+  const [user, setUser] = useState({email:'', password:''});
+
+  function handleChange(event){
+    setUser({...user, [event.target.name] : event.target.value})
+  }
+
+  const router = useNavigate();
+
+  async function userLogin(){
+    try{
+          const response = await api.post('/auth/login', {...user});
+          if(response.data.success){
+                toast.success(response.data.message);
+                Login(response.data.user);
+                localStorage.setItem('apple-user', JSON.stringify(response.data.token));
+                setTimeout(()=>{
+                  router('/');
+                },2000)
+                
+          }
+
+    }catch(error){
+      toast.error(error.response.data.message);
+    }
+  }
+
   return (
     <div className='sign-in-container'>
       <Header/>
       <h2>Sign in for faster checkout.</h2>
       <h3>Sign in to Apple Store</h3>
       <div className='sign-in-email-or-phone'>
-        <input type='text' placeholder='Email or Phone Number'/>
-        <i class="fa-regular fa-circle-right fa-xl"></i>
+        <input type='text' placeholder='Email or Phone Number' name='email' onChange={handleChange}/>
+        {/* <i class="fa-regular fa-circle-right fa-xl"></i> */}
+      </div>
+      <div className='sign-in-email-or-phone-password'>
+        <input type='text' placeholder='Password' name='password' onChange={handleChange}/>
+        <i class="fa-regular fa-circle-right fa-xl" onClick={userLogin}></i>
       </div>
       <div className='remember-me-div'>
         <input type='checkbox'/><span> Remember me</span>
       </div>
       <p className='blue-link-hover sign-in-forgot-password'>Forgotten your password? <i class="fa-solid fa-square-arrow-up-right"></i></p>
       <p className='sign-in-create-apple-id'>
-        <span>Do not have an Apple ID?</span><span className='blue-link-hover'> Create yours now. <i class="fa-solid fa-square-arrow-up-right"></i></span>
+        <span>Do not have an Apple ID?</span><span className='blue-link-hover' onClick={(() => {router('/register')})}> Create yours now. <i class="fa-solid fa-square-arrow-up-right"></i></span>
       </p>
       <div className='sign-in-pre-footer'>
         <p>Need some help? <span className='blue-link-hover'>Chat now</span> or call 000800 040 1966.</p>
@@ -38,6 +75,7 @@ function SignIn() {
             <span>India</span>
           </div>
       </div>
+      <Toaster/>
     </div>
   )
 }

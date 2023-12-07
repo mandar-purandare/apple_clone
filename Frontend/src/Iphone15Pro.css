@@ -78,7 +78,7 @@
     margin-top: 9%;
     display: flex;
     justify-content: flex-start;
-    align-items: end;
+    align-items: flex-end;
 }
 
 .i15pro-sec-2-text-div > div:nth-child(1){

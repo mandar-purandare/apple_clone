@@ -23,8 +23,18 @@ import our_bussiness_your_team from './images/store/our_bussiness_your_team.png'
 import trade_in_your_apple from './images/store/trade_in_your_apple.png';
 import Header from "./Header";
 import Footer from "./Footer";
+import { useNavigate } from "react-router-dom";
 
 function StoreBody(){
+
+    const router = useNavigate();
+
+    function goTo(product){
+        let path = product.toLowerCase();
+        path = path.replaceAll(' ','');
+        router('/shop'+ path);
+      }
+
     const storeAssistanceArray = [{icon: store_chat_specialist, line_1:'Need shopping help?', line_2:'Ask a specialist'}, 
     {icon:store_location_icon, line_1:'Visit an Apple Store', line_2:'Find one near you'}];
 
@@ -77,7 +87,7 @@ function StoreBody(){
             </section>
             <section className="store-all-products-slider ">
                 {allProdcutsSliderArray.map(obj => (
-                    <div className="store-all-products-slider-card ">
+                    <div className="store-all-products-slider-card " onClick={() => {goTo(obj.prod_name)}}>
                         <div className=""><img src={obj.img}/></div>
                         <p>{obj.prod_name}</p>
                     </div>
